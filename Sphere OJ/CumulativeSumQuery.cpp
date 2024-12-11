@@ -2,17 +2,11 @@
 
 using namespace std;
 
-//__builtin_popcount(); 	// count all set bits
-//__builtin_popcountll(); 
-//ceil = (a+b-1)/b;
-
 const int N = 10e5 + 9;
 int a[N];
 long long Prefix_sum[N];
 
 int main(){
-	/*freopen("modified_input.txt","r",stdin);
-	freopen("modified_output.txt","w",stdout);*/
 	int n;
 	cin>>n;
 	for(int i=1; i<=n; i++){
