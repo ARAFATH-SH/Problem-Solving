@@ -16,7 +16,7 @@ int32_t main(){
 	for(int i=1; i<N; i++){
 		prefix[i] = (prefix[i-1] + f(i)) % mod;
 	}
-	cout<<prefix[N-1]<<'\n';
+	
 	int t; cin>>t;
 	while(t--){
 		int n; cin>>n;
