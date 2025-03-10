@@ -1,12 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//next_permutaion();	//find next permutaion
-//prev_permutaion();	//find previous permutaion	
-//__builtin_popcount(); 	// count all set bits
-//__builtin_popcountll(); 
-//ceil = (a+b-1)/b;
-
 int32_t main(){
 	/*freopen("modified_input.txt","r",stdin);
 	freopen("modified_output.txt","w",stdout);*/
@@ -21,6 +15,7 @@ int32_t main(){
 	}
 
 	//This approach is called brute force approach. Time complexity of the code is O(n^3).
+	//If the number of operation is 10^18 then it takes 316.89 years.
 
 	/*long long int ans = -1e18;
 	for(int l=0; l<n; l++){
@@ -34,7 +29,8 @@ int32_t main(){
 	}*/
 
 
-	//Suboptimal approach. Time complexity of the code is O(n^2)
+	//Suboptimal approach. Time complexity of the code is O(n^2).
+	//If the number of operation is 10^18 then it takes  2.78 hours.
 
 	/*long long int subarray_sum = -1e18;
 	for(int l=0; l<n; l++){
@@ -44,6 +40,9 @@ int32_t main(){
 			subarray_sum = max(subarray_sum,current_subarray_sum);
 		}
 	}*/
+
+	//This is the optimal solution. Time complexity of this code is O(n).
+	//If the number of operation is 10^18 then it takes 0.01 seconds.
 
 	long long int subarray_sum = -1e18;
 	long long int current_subarray_sum = -1e18;

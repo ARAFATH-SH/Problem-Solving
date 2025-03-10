@@ -6,10 +6,15 @@ int32_t main(){
 	freopen("modified_output.txt","w",stdout);*/
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-	
-	int n,m;
-	cin>>n>>m;
-	cout<<((n*m)/2)<<'\n';
 
+	int n; cin>>n;
+
+	if(n%5==0){
+		cout<<(n/5)<<'\n';
+	}
+	else{
+		cout<<((n/5)+1)<<'\n';
+	}
+	
 	return 0;
 }
