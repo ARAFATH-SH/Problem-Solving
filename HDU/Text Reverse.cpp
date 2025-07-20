@@ -12,9 +12,9 @@ int32_t main(){
 	while(n--){
 	string s;	
 	getline(cin,s);
-	int n = s.size();
+	int x = s.size();
 	string word="";
-	for(int i=0; i<n; i++){
+	for(int i=0; i<x; i++){
 		if(s[i]==' '){
 			reverse(word.begin(),word.end());
 			cout<<word;
@@ -30,7 +30,6 @@ int32_t main(){
 
 	cout<<word;
 	cout<<'\n';
-	
 	}
 	
 	return 0;
